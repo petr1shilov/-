@@ -1,0 +1,15 @@
+{% extends 'baze.html' %} 
+<!-- импорт повторяющиего блока html -->
+{% block title %}
+    Добавление документа
+{% endblock %}
+
+
+{% block content %}
+   <h1>Добавление документа</h1>
+   <form method="post">
+       <input type="text" name="rubrics" id="rubrics" class="from-control" placeholder="Вести текст"><br>
+       <textarea name="text" id="text" class="from-control" cols="30" rows="10"></textarea><br>
+       <input type="submit" class="btn btn-success" value="add">
+   </form>
+{% endblock %}
